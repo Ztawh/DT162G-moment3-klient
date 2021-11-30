@@ -1,0 +1,201 @@
+/* Nollställer styling i webbläsaren*/
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+/* Hämtar typnistt */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Roboto:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(45deg,rgb(56, 56, 252) ,rgb(124, 0, 128), rgb(155, 1, 60), rgb(207, 4, 156));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 1rem;
+}
+
+/* Rubriker */
+h1 {
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 5rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+header {
+    padding: 3rem 0 5rem 0;
+    text-align: center;
+    color: white;
+    background: transparent;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem 1rem 2rem 1.8rem;
+    background: white;
+    border-radius: 30px;
+}
+
+#message {
+    transition: all 0.4s ease-in-out;
+}
+
+.message, #message-form {
+    height: 30px;
+    width: 100%;
+    padding-top: 0.4rem;
+    background: rgb(155, 207, 102);
+    text-align: center;
+    border-radius: 30px;
+    margin-bottom: 0.5rem;
+}
+
+/* Gömmer meddelandet vid radering av kurs */
+.hide {
+    height: 0;
+}
+
+/* Tabell */
+
+table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    padding: 0.5rem 0;
+}
+
+.center {
+    
+    text-align: center;
+}
+
+i {
+    transition: 0.2s;
+    font-size: 1.2rem;
+}
+
+/* Formulär */
+h3 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5rem;
+    border: solid 2px rgb(124, 0, 128);
+    border-radius: 10px;
+}
+
+form label {
+    margin: 0.5rem 0 0 0.5rem;
+    display: block;
+}
+
+#save {
+    background: linear-gradient(45deg,rgb(56, 56, 252) ,rgb(124, 0, 128), rgb(155, 1, 60), rgb(207, 4, 156));
+    color: white;
+    margin-top: 1rem;
+    transition: 0.3s;
+}
+
+#message-form {
+    max-width: 500px;
+    background: rgb(155, 1, 60);
+    margin: auto;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 4rem 1rem;
+}
+
+/* Media */
+/* Desktop */
+@media screen and (min-width:900px){
+    i:hover {
+        cursor: pointer;
+        color: rgb(223, 2, 2);
+    }
+
+    #save:hover {
+        cursor: pointer;
+        letter-spacing: 1px;
+    }
+}
+
+/* Mobil */
+@media screen and (max-width:400px){
+    main {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    i {
+        font-size: 1.1rem;
+    }
+
+    /* Gör om tabellen */
+    th {
+        display: none;
+    }
+
+    td {
+        display: block;
+    }
+    /* Sätter titlarna som before */
+    .id::before {
+        content: "ID: ";
+        font-weight: bold;
+    }
+
+    .code::before {
+        content: "Kurskod: ";
+        font-weight: bold;
+    }
+
+    .name::before {
+        content: "Kursnamn: ";
+        font-weight: bold;
+    }
+
+    .period::before {
+        content: "Period: ";
+        font-weight: bold;
+    }
+
+    .center {
+        text-align: left;
+    }
+
+    .delete {
+        text-align: right;
+    }
+}

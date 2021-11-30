@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurser år 2 | Webbutveckling</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="images/png" sizes="16x16" href="images/favicon-16x16.png">
+</head>
+
+<body>
+    <header>
+        <h1>kurser</h1>
+        <h2>webbutveckling år två</h2>
+    </header>
+    <main>
+        
+        <div id="message" class="hide"></div>
+        <table id="courses"></table>
+
+        <div id="form-container">
+            <h3>Lägg till en kurs</h3>
+            <div id="message-form" style="display: none;"></div>
+            <form id="add-form">
+                <label for="courseId">Kurskod</label>
+                <input type="text" id="courseId" placeholder="DT123G">
+
+                <label for="courseName">Kursnamn</label>
+                <input type="text" id="courseName" placeholder="Webbutveckling">
+
+                <label for="coursePeriod">Period</label>
+                <input type="text" id="coursePeriod" placeholder="1">
+
+                <input type="submit" value="Spara" id="save">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div><i class="far fa-copyright"></i> Amanda Hwatz Björkholm - 2021</div>
+        <div>Moment 2 Javascriptbaserad webbutveckling, Mittuniversitetet.</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/be0f6fe16e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
