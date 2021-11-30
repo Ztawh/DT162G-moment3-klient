@@ -7,4 +7,4 @@ Sidan visar de kurser som ska läsas år två på Mittuniversitetets webbutveckl
 
 ## Klona
 Klona repot med kommandot:
-* git clone https://github.com/Ztawh/DT162G-moment2-klient.git
+* git clone https://github.com/Ztawh/DT162G-moment3-klient.git
